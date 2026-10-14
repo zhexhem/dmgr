@@ -72,16 +72,16 @@ remove modules of three kinds: PowerShell, Clink, and PSScriptAnalyzer rules.
 
 ### From a git repository
 
-```powershell
-git clone https://github.com/me/pwsh-profile.git
-cd pwsh-profile
-.\install.ps1 -RepoUrl https://github.com/me/pwsh-profile.git
+```powershellhttps://github.com/zhexhem/dmgr.git
+git clone 
+cd dmgr
+.\install.ps1 -RepoUrl https://github.com/zhexhem/dmgr.git
 ```
 
 Or install directly without a local clone:
 
 ```powershell
-.\install.ps1 -RepoUrl https://github.com/me/pwsh-profile.git
+.\install.ps1 -RepoUrl https://github.com/zhexhem/dmgr.git
 ```
 
 The installer clones the repo into `$HOME\.powershell-profile` and runs
@@ -94,7 +94,7 @@ Set `$env:PSPROFILE_REPO` once and the installer becomes a one-liner:
 ```powershell
 [Environment]::SetEnvironmentVariable(
     "PSPROFILE_REPO",
-    "https://github.com/me/pwsh-profile.git",
+    ",https://github.com/zhexhem/dmgr"
     "User"
 )
 ```
